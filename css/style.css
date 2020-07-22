@@ -5,16 +5,368 @@
     margin: 0;
 }
 
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+@font-face {
+    font-family: Banny-Round; /* Имя шрифта */
+    src: url('../fonts/Banny/TTF/Banny-Round.ttf'); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: Banny-BoldRound; /* Имя шрифта */
+    src: url('../fonts/Banny/TTF/Banny-BoldRound.ttf'); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: Banny-LightRound; /* Имя шрифта */
+    src: url('../fonts/Banny/TTF/Banny-LightRound.ttf'); /* Путь к файлу со шрифтом */
+}
+
+.arrow-a {
+    background: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    width: 1px;
+    height: 706px;
+}
+
+.header-arrow-left {
+    left: 300px;
+    top: 101px;
+}
+
+.header-arrow-center-higher {
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 200px;
+    height: 463px;
+}
+
+.header-arrow-center-below {
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 200px;
+    height: 83px;
+    top: 724px;
+}
+
+.header-arrow-right {
+    left: 1142px;
+    top: 100.5px;
+}
+
+
+
+.title {
+    font-family: Banny-LightRound;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.arrow-title::after {
+    content: "";
+    height: 5px;
+    background: #E8C300;
+    border-radius: 50px;
+    display: block;
+    width: 60px;
+    margin-top: 10px;
+}
+
+.figure::after {
+    content: "";
+    width: 250px;
+    height: 250px;
+    display: block;
+    position: absolute;
+    border-bottom: 20px solid yellow;
+    border-top: 20px solid yellow;
+    border-left: 20px solid yellow;
+    border-right: 20px solid yellow;
+    box-sizing: border-box;
+    left: 280px;
+    top: 110px;
+    box-shadow: 0px 0px 100px #000000;
+    border-radius: 5px;
+}
+
+.text-higher {
+    margin-top: 15px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.6em;
+}
+
+.text-below {
+    font-size: 14px;
+    line-height: 1.7em;
+}
+
 /* HEADER */
 
+.header {
+    background: url('../img/header.png') no-repeat center top / cover; 
+}
 
+.container-header {
+    margin: 0 80px 0 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-offer__menu {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    display: flex;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header-offer__menu-item {
+    height: fit-content;
+    width: 133px;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-offer__img {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 25px;
+}
+
+.header-inner {
+    padding-top: 225px;
+}
+
+.header-inner__left-col {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    color: #FFFFFF;
+    transform: rotate(-90deg);
+}
+
+.header-inner__center-content {
+    text-align: center;
+}
+
+.header-inner__text {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 14px;
+}
+
+.header-inner__title {
+    font-family: Banny-LightRound;
+    font-size: 96px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    text-align: -webkit-center;
+}
+
+.header-inner__btn {
+    width: 200px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.header-inner__our-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.header-inner__btn_left {
+    background: #E8C300;
+    border-radius: 5px;
+    margin-right: 40px;
+}
+
+.header-inner__btn_right {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+
+.header-inner__right-col > i {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: white;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+}
+
+.header-inner__right-col > i:last-child {
+    margin-bottom: 0;
+}
+
+.aside {
+    color: white;
+    writing-mode: tb;
+    /* height: fit-content; */
+    transform: rotate(-180deg);
+    height: fit-content;
+}
+
+.header-inner__left-col {
+    color: white;
+    writing-mode: tb;
+    transform: rotate(-180deg);
+    height: max-content;
+    padding-left: 25px;
+}
+
+.header-inner__arrow {
+    padding-top: 82px;
+    display: block;
+    margin: auto;
+    padding-bottom: 83px;
+}
 
 /* ABOUT */
 
+.about {
+    /* padding-top: 100px; */
 
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.container-about {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.about-our {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-left-b {
+    width: 600px;
+}
+
+.about__title {
+    font-family: Banny-Round;
+    font-size: 36px;
+    color: #000000;
+    text-align: -webkit-center;
+}
+
+.about__text {
+    font-family: Open Sans;
+    text-align: center;
+}
+
+
+
+.about-right-b {
+
+}
+
+.about__img {
+    width: 475px;
+    height: 475px;
+}
+
+.figure {
+    position: relative;
+}
 
 /* MASTER-CHEF */
 
+.master-chef {
+    background: url('../img/section-cook.jpg') no-repeat center top / cover;
+}
+
+.container-chef {
+    margin-left: 200px;
+    margin-right: 100px;
+}
+
+.master-chef__text-title {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 41px;
+    padding-bottom: 41px;
+}
+
+.our-chef {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.master-chef-left-b {
+    margin-right: 72px;
+}
+
+.master-chef__figure {
+    position: relative;
+}
+
+.master-chef__figure.figure::after {
+    left: -88px;
+    top: 110px;
+}
+
+.master-chef__img {
+    width: 475px;
+    height: 475px;
+}
+
+.master-chef-right-b {
+    width: 600px;
+}
+
+.master-chef__title {
+    font-size: 36px;
+    text-align: -webkit-center;
+}
+
+.master-chef__text {
+    color: rgba(255, 255, 255, 0.9);
+    font-family: Open Sans;
+    text-align: center;
+}
 
 
 /* BOOK-TABLE */
