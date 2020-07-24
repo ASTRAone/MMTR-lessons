@@ -8,6 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="./css/media.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"  rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./slick-slider/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./slick-slider/slick/slick-theme.css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./slick-slider/slick/slick.min.js"></script>
 </head>
 <body>
     <header class="header" id="header">
@@ -78,7 +82,7 @@
                 </div>
                 <div class="about-right-b">
                     <figure class="about__figure figure">
-                        <img class="about__img" src="./img/bonfire.png" alt="Bonfire">
+                        <img class="about__img" src="./img/bonfire (2).png" alt="Bonfire">
                     </figure>    
                 </div>
             </div>
@@ -86,11 +90,14 @@
     </section>
     <section class="master-chef">
         <div class="container-chef">
-            <p class="master-chef__text-title">our team</p>
+            <div class="master-chef-left arrow-a"></div>
+            <div class="master-chef-center-higher arrow-a"></div>
+            <div class="master-chef-right arrow-a"></div>
+            <p class="master-chef__text-title text-title">our team</p>
             <div class="our-chef">
                 <div class="master-chef-left-b">
                     <figure class="master-chef__figure figure">
-                        <img class="master-chef__img" src="./img/cook.png" alt="Chef">
+                        <img class="master-chef__img" src="./img/cook (2).png" alt="Chef">
                     </figure>   
                 </div>
                 <div class="master-chef-right-b">
@@ -113,35 +120,521 @@
             </div>
         </div>
     </section>
-
     <section class="book-table">
-
+        <div class="book-table-container">
+            <div class="our-book-table">
+                <form class="book-table-left-b">
+                    <h3 class="book-table__title title arrow-title">book a table</h3>
+                    <div class="book-table__b">
+                        <input class="book-table__item" type="text" placeholder="Name">
+                        <input class="book-table__item" type="email" placeholder="Email">
+                    </div>
+                    <div class="book-table__b">
+                        <input class="book-table__item" type="text" placeholder="Phone">
+                        <label class="book-table__label">
+                            <input class="book-table__item" list="people-list" type="text" placeholder="People">
+                        </label>
+                        <datalist class="book-table__item_datalist" id="people-list">
+                            <option>Пункт 1</option>
+                            <option>Пункт 2</option>
+                          </datalist>
+                    </div>
+                    <div class="book-table__b">
+                        <input class="book-table__item book-table__item_prev" type="text" placeholder="Date (mm/dd)">
+                        <label class="book-table__label">
+                            <input class="book-table__item book-table__item_one" list="time-list" type="datetime" placeholder="Time">
+                        </label>
+                        <datalist class="book-table__item_datalist" id="time-list">
+                            <option>Пункт 1</option>
+                            <option>Пункт 2</option>
+                        </datalist>
+                    </div>
+                    <a class="book-table__a" href="#">book now</a>
+                </form>
+                <div class="book-table-right-b">
+                    <figure class="book-table__figure figure">
+                        <img class="book-table__img" src="./img/clock.png" alt="Clock">
+                    </figure>
+                </div>
+            </div>
+            <div class="book-table__data">
+                <data>
+                    Mon - Fri: <strong>8PM - 10PM</strong>, Sat - Sun: <strong>8PM - 3AM</strong>, Phone: <strong>+40 729 131 637/+40 726 458 782</strong>
+                </data>
+            </div>
+        </div>
     </section>
-
     <section class="chocolate-pancakes">
-
+        <div class="chocolate-pancakes-continer">
+            <div class="chocolate-pancakes__slider">
+                <!-- <div class="chocolate-pancakes-left arrow-a"></div>
+                <div class="chocolate-pancakes-center-higher arrow-a"></div>
+                <div class="chocolate-pancakes-right arrow-a"></div> -->
+                <p class="chocolate-pancakes__text-title text-title">specialties</p>
+                <div class="our-chocolate-pancakes">
+                    <div class="chocolate-pancakes-left-b">
+                        <figure class="chocolate-pancakes__figure figure">
+                            <img class="chocolate-pancakes__img" src="./img/dessert (2).png" alt="Dessert">
+                        </figure>
+                    </div>
+                    <div class="chocolate-pancakes-right-b">
+                        <h3 class="chocolate-pancakes__title title arrow-title">chocolate pancakes</h3>
+                        <p class="chocolate-pancakes__text text text-higher">
+                            Lorem ipsum dolor sit amet, consectetur 
+                            adipiscing elit. Duis at velit maximus, 
+                            molestie est a, tempor magna.
+                        </p>
+                        <p class="chocolate-pancakes__text text text-below">
+                            Integer ullamcorper neque eu purus euismod,
+                            ac faucibus mauris posuere. Morbi non 
+                            ultrices ligula. Sed dictum, enim sed 
+                            ullamcorper feugiat, dui odio vehicula 
+                            eros, a sollicitudin lorem quam nec sem. 
+                            Mauris tincidunt feugiat diam convallis 
+                            pharetra. Nulla facilisis semper laoreet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="chocolate-pancakes__slider">
+                <p class="chocolate-pancakes__text-title text-title">specialties</p>
+                <div class="our-chocolate-pancakes">
+                    <div class="chocolate-pancakes-left-b">
+                        <figure class="chocolate-pancakes__figure figure">
+                            <img class="chocolate-pancakes__img" src="./img/dessert (2).png" alt="Dessert">
+                        </figure>
+                    </div>
+                    <div class="chocolate-pancakes-right-b">
+                        <h3 class="chocolate-pancakes__title title arrow-title">chocolate pancakes</h3>
+                        <p class="chocolate-pancakes__text text text-higher">
+                            Lorem ipsum dolor sit amet, consectetur 
+                            adipiscing elit. Duis at velit maximus, 
+                            molestie est a, tempor magna.
+                        </p>
+                        <p class="chocolate-pancakes__text text text-below">
+                            Integer ullamcorper neque eu purus euismod,
+                            ac faucibus mauris posuere. Morbi non 
+                            ultrices ligula. Sed dictum, enim sed 
+                            ullamcorper feugiat, dui odio vehicula 
+                            eros, a sollicitudin lorem quam nec sem. 
+                            Mauris tincidunt feugiat diam convallis 
+                            pharetra. Nulla facilisis semper laoreet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="chocolate-pancakes__slider">
+                <p class="chocolate-pancakes__text-title text-title">specialties</p>
+                <div class="our-chocolate-pancakes">
+                    <div class="chocolate-pancakes-left-b">
+                        <figure class="chocolate-pancakes__figure figure">
+                            <img class="chocolate-pancakes__img" src="./img/dessert (2).png" alt="Dessert">
+                        </figure>
+                    </div>
+                    <div class="chocolate-pancakes-right-b">
+                        <h3 class="chocolate-pancakes__title title arrow-title">chocolate pancakes</h3>
+                        <p class="chocolate-pancakes__text text text-higher">
+                            Lorem ipsum dolor sit amet, consectetur 
+                            adipiscing elit. Duis at velit maximus, 
+                            molestie est a, tempor magna.
+                        </p>
+                        <p class="chocolate-pancakes__text text text-below">
+                            Integer ullamcorper neque eu purus euismod,
+                            ac faucibus mauris posuere. Morbi non 
+                            ultrices ligula. Sed dictum, enim sed 
+                            ullamcorper feugiat, dui odio vehicula 
+                            eros, a sollicitudin lorem quam nec sem. 
+                            Mauris tincidunt feugiat diam convallis 
+                            pharetra. Nulla facilisis semper laoreet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-
     <section class="delicious-menu"> 
-
+        <div class="delicious-menu-container">
+            <div class="delicious-menu__offer">
+                <h3 class="delicious-menu__title title arrow-title">delicious menu</h3>
+                <p class="delicious-menu__text text text-higher">
+                    Lorem ipsum dolor sit amet, consectetur 
+                    adipiscing elit. Duis at velit maximus, 
+                    molestie est a, tempor magna.
+                </p>
+            </div>
+            <ul class="delicious-menu__items">
+                <li class="delicious-menu__item">soupe</li>
+                <li class="delicious-menu__item">pizza</li>
+                <li class="delicious-menu__item">pasta</li>
+                <li class="delicious-menu__item">desert</li>
+                <li class="delicious-menu__item">wine</li>
+                <li class="delicious-menu__item">beer</li>
+                <li class="delicious-menu__item">drinks</li>
+            </ul>
+            <div class="our-delicious-menu">
+                <div class="our-delicious-menu__items-b">
+                    <div class="our-delicious-menu__item-b">
+                        <p class="our-delicious-menu__text-title">
+                            pizza quatro stagioni
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            55,68 USD
+                        </p>
+                        <p class="our-delicious-menu__text-title-below">
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                    </div>
+                    <div class="our-delicious-menu__item-b">
+                        <p class="our-delicious-menu__text-title">
+                            pizza quatro stagioni
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            55,68 USD
+                        </p>
+                        <p class="our-delicious-menu__text-title-below">
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                    </div>
+                    <div class="our-delicious-menu__item-b">
+                        <p class="our-delicious-menu__text-title">
+                            pizza quatro stagioni
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            55,68 USD
+                        </p>
+                        <p class="our-delicious-menu__text-title-below">
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                    </div>
+                    <div class="our-delicious-menu__item-b">
+                        <p class="our-delicious-menu__text-title">
+                            pizza quatro stagioni
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            55,68 USD
+                        </p>
+                        <p class="our-delicious-menu__text-title-below">
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                    </div>
+                    <div class="our-delicious-menu__item-b">
+                        <p class="our-delicious-menu__text-title">
+                            pizza quatro stagioni
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            55,68 USD
+                        </p>
+                        <p class="our-delicious-menu__text-title-below">
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                    </div>
+                    <div class="our-delicious-menu__item-b">
+                        <p class="our-delicious-menu__text-title">
+                            pizza quatro stagioni
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            55,68 USD
+                        </p>
+                        <p class="our-delicious-menu__text-title-below">
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                    </div>
+                    <div class="our-delicious-menu__item-b">
+                        <p class="our-delicious-menu__text-title">
+                            pizza quatro stagioni
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            55,68 USD
+                        </p>
+                        <p class="our-delicious-menu__text-title-below">
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                    </div>
+                </div>
+                <div class="our-delicious-menu__items-b">
+                    <div class="our-delicious-menu__item-b">
+                        <p class="our-delicious-menu__text-title">
+                            pizza quatro stagioni
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            55,68 USD
+                        </p>
+                        <p class="our-delicious-menu__text-title-below">
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                    </div>
+                    <div class="our-delicious-menu__item-b">
+                        <p class="our-delicious-menu__text-title">
+                            pizza quatro stagioni
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            55,68 USD
+                        </p>
+                        <p class="our-delicious-menu__text-title-below">
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                    </div>
+                    <div class="our-delicious-menu__item-b">
+                        <p class="our-delicious-menu__text-title">
+                            pizza quatro stagioni
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            55,68 USD
+                        </p>
+                        <p class="our-delicious-menu__text-title-below">
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                    </div>
+                    <div class="our-delicious-menu__item-b">
+                        <p class="our-delicious-menu__text-title">
+                            pizza quatro stagioni
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            55,68 USD
+                        </p>
+                        <p class="our-delicious-menu__text-title-below">
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                    </div>
+                    <div class="our-delicious-menu__item-b">
+                        <p class="our-delicious-menu__text-title">
+                            pizza quatro stagioni
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            55,68 USD
+                        </p>
+                        <p class="our-delicious-menu__text-title-below">
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                    </div>
+                    <div class="our-delicious-menu__item-b">
+                        <p class="our-delicious-menu__text-title">
+                            pizza quatro stagioni
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            55,68 USD
+                        </p>
+                        <p class="our-delicious-menu__text-title-below">
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                    </div>
+                    <div class="our-delicious-menu__item-b">
+                        <p class="our-delicious-menu__text-title">
+                            pizza quatro stagioni
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            55,68 USD
+                        </p>
+                        <p class="our-delicious-menu__text-title-below">
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                    </div>
+                </div>
+                <div class="our-delicious-menu__items-b">
+                    <div class="our-delicious-menu__item-b">
+                        <p class="our-delicious-menu__text-title">
+                            pizza quatro stagioni
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            55,68 USD
+                        </p>
+                        <p class="our-delicious-menu__text-title-below">
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                    </div>
+                    <div class="our-delicious-menu__item-b">
+                        <p class="our-delicious-menu__text-title">
+                            pizza quatro stagioni
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            55,68 USD
+                        </p>
+                        <p class="our-delicious-menu__text-title-below">
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                    </div>
+                    <div class="our-delicious-menu__item-b">
+                        <p class="our-delicious-menu__text-title">
+                            pizza quatro stagioni
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            55,68 USD
+                        </p>
+                        <p class="our-delicious-menu__text-title-below">
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                    </div>
+                    <div class="our-delicious-menu__item-b">
+                        <p class="our-delicious-menu__text-title">
+                            pizza quatro stagioni
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            55,68 USD
+                        </p>
+                        <p class="our-delicious-menu__text-title-below">
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                    </div>
+                    <div class="our-delicious-menu__item-b">
+                        <p class="our-delicious-menu__text-title">
+                            pizza quatro stagioni
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            55,68 USD
+                        </p>
+                        <p class="our-delicious-menu__text-title-below">
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                    </div>
+                    <div class="our-delicious-menu__item-b">
+                        <p class="our-delicious-menu__text-title">
+                            pizza quatro stagioni
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            55,68 USD
+                        </p>
+                        <p class="our-delicious-menu__text-title-below">
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                    </div>
+                    <div class="our-delicious-menu__item-b">
+                        <p class="our-delicious-menu__text-title">
+                            pizza quatro stagioni
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            <span class="our-delicious-menu__label">.</span>
+                            55,68 USD
+                        </p>
+                        <p class="our-delicious-menu__text-title-below">
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-
     <section class="corporate-weddings">
-
+        <div class="corporate-weddings-container">
+                <div class="corporate-weddings-left arrow-a"></div>
+                <div class="corporate-weddings-center-higher arrow-a"></div>
+                <div class="corporate-weddings-right arrow-a"></div>
+            <p class="corporate-weddings__text-title text-title">private events</p>
+            <div class="our-corporate-weddings">
+                <div class="our-corporate-left-b">
+                    <figure class="our-corporate__figure our-corporate__figure_l figure">
+                        <img class="our-corporate__img" src="./img/rings (2).png" alt="Rings">
+                        <figcaption class="our-corporate__figcaption_l figcaption">weddings</figcaption>
+                    </figure>  
+                </div>
+                <div class="our-corporate-right-b">
+                    <figure class="our-corporate__figure our-corporate__figure_r figure">
+                        <figcaption class="our-corporate__figcaption our-corporate__figcaption_r figcaption">corporate pzrties</figcaption>
+                        <img class="our-corporate__img" src="./img/champagne.png" alt="Champagne">
+                    </figure>  
+                </div>
+            </div>
+            <p class="corporate-weddings__text">
+                For private events please 
+                call: <span>+40 729 131 637/+40 726 458 782</span>
+                or use the contact form.
+            </p>
+        </div>
     </section>
-
     <section class="our-images">
-
+        <div class="our-images__items">
+            <img class="our-images__item" src="./img/cafe.png" alt="Cafe">
+            <img class="our-images__item" src="./img/camie.png" alt="Camie">
+            <img class="our-images__item" src="./img/restaurant.png" alt="Restaurant">
+            <img class="our-images__item" src="./img/canteen.png" alt="Canteen">
+        </div>
     </section>
-
     <section class="contact">
-
+        <div class="contact-container">
+            <div class="contact__offer">
+                <h3 class="contact__title title arrow-title">contact</h3>
+                <p class="contact__text text text-higher">
+                    Lorem ipsum dolor sit amet, consectetur 
+                    adipiscing elit. Duis at velit maximus, 
+                    molestie est a, tempor magna.
+                </p>
+            </div>
+            <form class="contact-form">
+                <div class="our-contact-form">
+                    <div class="our-contact">
+                        <input class="contact-form__input" type="text" placeholder="Name">
+                        <input class="contact-form__input" type="email" placeholder="Email">
+                        <input class="contact-form__input" type="text" placeholder="Phone">
+                    </div>
+                    <textarea class="contact-form__textarea" placeholder="Message"></textarea>
+                </div>  
+                <div class="our-contact-footer">
+                    <div class="our-contact-footer__left-b">
+                        <div class="our-contact-footer__item">
+                            <i class="fa fa-map-marker"></i>
+                            <p class="our-contact-footer__text">5th London Boulevard, U.K.</p>
+                        </div>
+                        <div class="our-contact-footer__item">
+                            <i class="fa fa-phone"></i>
+                            <p class="our-contact-footer__text">+40 729 131 637/+40 726 458 782</p>
+                        </div>
+                        <div class="our-contact-footer__item">
+                            <i class="fa fa-envelope"></i>
+                            <p class="our-contact-footer__text">office@mindblister.com</p>
+                        </div>
+                    </div>
+                    <a class="our-contact-footer__btn" href="#">send message</a>
+                </div>
+            </form>
+        </div>
     </section>
-
     <footer class="footer" id="footer">
-
+        <div class="footer__before"></div>
+        <div class="footer__after">
+            <p class="footer__text">© Copyright Mindblister 2019</p>
+        </div>
     </footer>
-    
     <script src="./js/main.js"></script>
+    <script src="./js/slick-slider.js"></script>
 </body>
 </html>
