@@ -137,6 +137,8 @@ ul {
 /* HEADER */
 
 .header {
+    max-width: 1440px;
+    margin: 0 auto;
     background: url('../img/header.png') no-repeat center top / cover; 
 }
 
@@ -280,6 +282,8 @@ ul {
 /* ABOUT */
 
 .about {
+    max-width: 1440px;
+    margin: 0 auto;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -325,6 +329,8 @@ ul {
 /* MASTER-CHEF */
 
 .master-chef {
+    max-width: 1440px;
+    margin: 0 auto;
     background: url('../img/section-cook.jpg') no-repeat center top / cover;
 }
 
@@ -396,6 +402,8 @@ ul {
 /* BOOK-TABLE */
 
 .book-table {
+    max-width: 1440px;
+    margin: 0 auto;
     padding-top: 80px;
 }
 
@@ -503,6 +511,8 @@ ul {
 /* CHOCOLATE-PANCAKES */
 
 .chocolate-pancakes {
+    max-width: 1440px;
+    margin: 0 auto;
     background: url('../img/section-dessert.jpg') no-repeat center top / cover;
 }
 
@@ -551,6 +561,8 @@ ul {
 /* DELICIOUS-MENU */
 
 .delicious-menu {
+    max-width: 1440px;
+    margin: 0 auto;
     padding-top: 100px;
 }
 
@@ -662,6 +674,8 @@ ul {
 /* CORPORATE-WEDDINGS */
 
 .corporate-weddings {
+    max-width: 1440px;
+    margin: 0 auto;
     background: url('../img/section-dessert.jpg') no-repeat center top / cover;
 }
 
@@ -757,6 +771,11 @@ ul {
 
 /* OUR-IMAGES */
 
+.our-images {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 .our-images__items {
     display: flex;
     justify-content: space-between;
@@ -770,6 +789,8 @@ ul {
 /* CONTACT */
 
 .contact {
+    max-width: 1440px;
+    margin: 0 auto;
     padding-top: 100px;
 }
 
@@ -909,6 +930,8 @@ ul {
 /* FOOTER */
 
 .footer__before {
+    max-width: 1440px;
+    margin: 0 auto;
     background: url('../img/map-footer.jpg') no-repeat center top / cover;
     width: 100%;
     height: 475px;
