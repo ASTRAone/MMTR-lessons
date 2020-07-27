@@ -1,0 +1,157 @@
+/* Specifications */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* .container {
+    max-height: 395px;
+    overflow-y: scroll;
+} */
+
+/* TABLE */
+
+.table {
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 1px solid;
+    width: 600px;
+    border-collapse: collapse; 
+    line-height: 1.1;
+    max-height: 345px;
+}
+
+.table__caption {
+    border: 1px solid;
+    border-bottom: 0;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 6px;
+    padding-top: 5px;
+    background: #dedcd9;
+}
+
+.table__caption::after {
+    content: "<Lorem ipsum dolor>";
+}
+
+th {
+    border-right: 1px solid;
+    background: #dedcd9;
+    border-bottom: 1px solid;
+}
+
+th.table__th_first::after {
+    content: "<#>";
+}
+
+th.table__th-two::after {
+    content: "<Lorem>";
+}
+
+th.table__th-item::after {
+    content: "<Lorem>";
+}
+
+th.table__th-item_last::after {
+    content: "<Link>";
+}
+
+.table__th-two {
+    text-align: left;
+}
+
+th:last-child {
+    border-right: 0;
+}
+
+.table__item-td {
+    width: 100px;
+    vertical-align: bottom;
+}
+
+.table__item-td_first {
+    width: 35px;
+    vertical-align: -webkit-baseline-middle;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.table__item-td_two {
+    max-width: 160px;
+    min-width: 147px;
+    max-height: 60px;
+    padding-bottom: 40px;
+    text-align: left;
+    padding-left: 5px;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+td {
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    text-align: center;
+}
+
+a::after {
+    content: "<: "attr(href)">";
+}
+
+.table__td-ipsum {
+    height: 40px;
+}
+
+.table__item-td_last {
+    vertical-align: text-bottom;
+    padding-top: 5px;
+}
+
+.table__td-same {
+    height: 40px;
+    vertical-align: bottom;
+}
+
+.table__td-same_first {
+    text-align: left;
+    padding-left: 5px;
+    vertical-align: inherit;
+}
+
+.table__td-same_two {
+    text-align: left;
+    padding-left: 5px;
+}
+
+.table__td-same_last {
+    vertical-align: inherit;
+}
+
+.table__paint:nth-child(odd) {
+    background: #adecc9;;
+}
+
+.table__outcome {
+    text-align: left;
+    padding-left: 15px;
+    height: 35px;
+    background: #dedcd9;
+}
+
+.table__outcome::after {
+    content: "<Всего: 7>";
+}
+
+.table__copyright {
+    text-align: left;
+    padding-left: 15px;
+    height: 50px;
+    background: #dedcd9;
+}
+
+.table__span::before {
+    content: "\00A9";
+    margin-right: 5px;
+}

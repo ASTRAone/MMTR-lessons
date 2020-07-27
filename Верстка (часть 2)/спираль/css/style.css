@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 800px;
+    margin: auto;
+    height: auto;
+}
+
+.contsiner-outer {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.outer {
+    border: 3px solid;
+    box-sizing: border-box;
+}
+
+.outer-top {
+    width: 100%;
+    height: 100px;
+    background: #1283a5;
+}
+
+.outer-left {
+    border-top: 0;
+    background: #696196;
+    width: 129px;
+    height: 800px;
+    border-bottom: 0;
+}
+
+.outer-right {
+    width: 130px;
+    height: 800px;
+    background: #6fa2a2;
+    border-top: 0;
+}
+
+.outer-bottom {
+    width: 678px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    border-right: 0;
+    background: cyan;
+}
+
+.contsiner-inside {
+    width: 75%;
+}
+
+.contsiner-inside_our {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.inside {
+    border: 3px solid;
+    box-sizing: border-box;
+}
+
+.inside-top {
+    border-top: 0;
+    border-left: 0;
+    background: aquamarine;
+    height: 100px;
+    width: 100%;
+    border-right: 0;
+}
+
+.inside-left {
+    width: 129px;
+    height: 500px;
+    background: #dc49f7;    
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.inside-right {
+    width: 129px;
+    height: 600px;
+    border-bottom: 0;
+    border-right: 0;
+    border-top: 0;
+    background: #bcca9a;
+}
+
+.inside-bottom {
+    width: 76.8%;
+    height: 160px;
+    position: absolute;
+    bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    background: #1090ff;
+}
+
+.container-intravenously_our {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.intravenously {
+    border: 3px solid;
+    box-sizing: border-box;
+}
+
+.intravenously-top {
+    width: 100%;
+    height: 160px;
+    background: #ff7c8e;
+    border: 0;
+}
+
+.intravenously-left {
+    width: 100px;
+    height: 100px;
+    border-left: 0;
+    border-bottom: 0;
+    background: #afb7b4;
+}
+
+.intravenously-center {
+    width: 100px;
+    height: 100px;
+    border: 0;
+    background: #ff733e;
+    border-top: 3px solid;
+}
+
+.intravenously-right {
+    width: 100px;   
+    height: 280px;
+    border-radius: 0;
+    border-right: 0;
+    border-bottom: 0;
+    background: #ecff50;
+}
+
+.intravenously-bottom {
+    position: absolute;
+    height: 180px;
+    background: #b15f46;
+    bottom: 0;
+    width: 66.5%;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+}
