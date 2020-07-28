@@ -2144,3 +2144,46 @@ ul {
     }
 }
 
+@media(max-width: 746px) {
+    .book-table__label::before {
+        left: 195px;
+    }
+}
+
+@media(max-width: 720px) {
+    .book-table-container {
+        margin-right: 80px;
+        margin-left: 80px;
+        width: auto;
+    }
+
+    .our-book-table {
+        display: block;
+    }
+
+    .book-table-left-b {
+        margin: 0 auto;
+        width: auto;
+    }
+
+    .book-table__item {
+        max-width: 100%;
+    }
+
+    .book-table__label::before {
+        left: 500px;
+    }
+
+    .book-table__figure {
+        display: flex;
+        justify-content: center;
+    }
+
+    .book-table__figure::after {
+        left: 63%;
+    }
+
+    .container-about {
+        margin-left: 80px;  
+    }
+}

@@ -55,6 +55,10 @@
     .master-chef-right {
         height: 549px;
     }
+
+    .book-table-container {
+        margin-left: 80px;
+    }
 }
 
 @media(max-width: 731px) {
@@ -206,6 +210,46 @@
     }
 }
 
+@media(max-width: 720px) {
+    .book-table-container {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
+@media(max-width: 710px) {
+    .our-delicious-menu {
+        display: block;
+    }
+
+    .our-delicious-menu__items-b {
+        margin: 0 auto;
+        padding-bottom: 45px;
+    }
+
+    .our-delicious-menu__items-b:last-child {
+        padding-bottom: 0;
+    }
+
+    .our-delicious-menu__item-b {
+        margin-bottom: 10px;
+    }
+
+    .our-delicious-menu__text-title {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .our-delicious-menu__text-title-below {
+        text-align: center;
+        font-size: 11px;
+    }
+
+    .our-delicious-menu__items-b {
+        width: 260px;
+    }
+}
+
 @media(max-width: 680px) {
     .header-offer__menu-item {
         font-size: 11px;
@@ -304,12 +348,35 @@
     .book-table-left-b {
         width: auto;
     }
+
+    .delicious-menu-container {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
 }
 
 @media(max-width: 590px) {
     .header-offer__menu-item {
         font-size: 9px;
         width: 42px;
+    }
+
+    .book-table__b {
+        display: block;
+    }
+
+    .book-table__item {
+        width: 100%;
+    }
+
+    .book-table__label::before {
+        left: 450px;
+    }
+}
+
+@media(max-width: 555px) {
+    .book-table__label::before {
+        left: 405px;
     }
 }
 
@@ -343,6 +410,12 @@
     }
 }
 
+@media(max-width: 515px) {
+    .book-table__label::before {
+        left: 370px;
+    }
+}
+
 @media(max-width: 514px) {
     .corporate-weddings-left {
         height: 805px;
@@ -363,9 +436,9 @@
         left: 67%;
     }
 
-    .book-table__item {
+    /* .book-table__item {
         width: 220px;
-    }
+    } */
 
     .header-offer__img {
         width: 70px;
@@ -409,6 +482,12 @@
 
     .header-arrow-center-below {
         top: 599px;
+    }
+}
+
+@media(max-width: 480px) {
+    .book-table__label::before {
+        left: 335px;
     }
 }
 
@@ -482,9 +561,9 @@
         font-size: 9px;
     }
 
-    .book-table__item {
+    /* .book-table__item {
         width: 170px;
-    }
+    } */
 
     .delicious-menu-container {
         margin-left: 5px;
@@ -518,9 +597,9 @@
         left: 80%;
     }
 
-    .book-table__item {
+    /* .book-table__item {
         width: 174px;
-    }
+    } */
 
     .header-arrow-center-higher {
         top: 100px;
@@ -542,6 +621,10 @@
     .corporate-weddings-right {
         height: 793px;
     }
+
+    .book-table__label::before {
+        left: 270px;
+    }
 }
 
 @media(max-width: 437px) {
@@ -555,6 +638,12 @@
 
     .master-chef-right {    
         height: 837px;
+    }
+}
+
+@media(max-width: 410px) {
+    .book-table__label::before {
+        left: 240px;
     }
 }
 
@@ -634,6 +723,20 @@
     .header-arrow-center-below {
         top: 546px;
     }
+
+    .book-table-container {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .book-table__label::before {
+        left: 260px;
+        top: 27px;
+    }
+
+    .book-table__item {
+        height: 60px;
+    }
 }
 
 @media(max-width: 377px) {
@@ -652,7 +755,7 @@
 
 @media(max-width: 370px) {
     .book-table__label::before {
-        left: 328px;
+        left: 240px;
     }
 }
 
@@ -676,9 +779,9 @@
 }   
 
 @media(max-width: 350px) {
-    .book-table__label::before {
+    /* .book-table__label::before {
         left: 305px;
-    }
+    } */
 }
 
 @media(max-width: 344px) {
@@ -702,7 +805,7 @@
     }
 
     .book-table__label::before {
-        left: 300px;
+        left: 210px;
     }
 
     .book-table__img {
@@ -719,8 +822,8 @@
     }
 
     .header-offer__menu-item {
-        font-size: 7px;
-        width: 35px;
+        font-size: 8px;
+        width: 38px;
     }
 
     .header-offer__menu-item {
@@ -755,6 +858,10 @@
 
     .master-chef-right {    
         height: 828px;
+    }
+
+    .container-header {
+        margin: 0 5px 0 5px;
     }
 }
 
