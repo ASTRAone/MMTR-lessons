@@ -1,32 +1,29 @@
-// Открыть модальное окно
-{let btn = document.querySelector(".btn");
+function Menu(options) {
+    let elem = options.elem;
+    
+    // Открыть модальное окно
+    elem.onclick = function(event) {
+        if (event.target.closest(".btn")) {
 
-btn.addEventListener("click", () => {
-    let  cardModal= document.querySelector(".container-modal");
-    cardModal.style.display = "block";
+            let cardModal= elem.querySelector(".container-modal");
+            cardModal.style.display = "block";
+    
+            let btn = elem.querySelector(".btn");
+            btn.style.display = "none";
+        }
+        // Закрыть модальное окно
+        if (event.target.closest(".btn-close")) {
 
-    btn.style.display = "none";
-});
-}
+            let cardModal= elem.querySelector(".container-modal");
+            cardModal.style.display = "none";
+            
+            let btnBody = elem.querySelector(".btn");
+            btnBody.style.display = "block";
 
-// Закрыть модальное окно
-{let btnsClose = document.querySelectorAll(".btn-close");
-
-btnsClose.forEach((btn) => {
-    btn.addEventListener("click", () => {
-        let cardModal= document.querySelector(".container-modal");
-        cardModal.style.display = "none";
-
-        let btnBody = document.querySelector(".btn");
-        btnBody.style.display = "block";
-    });
-});
-}
-
-// Сохранить изменения
-{let btnSave = document.querySelector(".btn-save");
-
-btnSave.addEventListener("click", () => {
-    alert("Успешно сохранено");
-});
-}
+        }
+        // Сохранить изменения
+        if (event.target.closest(".btn-save")) {
+            alert("Успешно сохранено")
+        }
+    };
+};
