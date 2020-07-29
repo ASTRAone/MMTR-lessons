@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accordion</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.polyfill.io/v1/polyfill.js?features=Element.prototype.closest"></script>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="accordion">
         <div tabindex="1" class="container__item">
             Title for Tab - 1
             <span class="span">&#11015;</span>
@@ -49,5 +50,10 @@
         </div>
     </div>
     <script src="./js/main.js"></script>
+    <script>
+         let menu = new Menu({
+            elem: document.getElementById('accordion')
+        });
+    </script>
 </body>
 </html>
