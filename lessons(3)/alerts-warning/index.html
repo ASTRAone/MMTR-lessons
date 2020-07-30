@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerts</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container" id="alert-warning"> 
+        <button class="btn">
+            Вызвать модальное окно
+        </button>
+        <div class="card-modal">
+            <div class="card-modal__close">
+                <span class="card-modal__span btn-close">&#10006;	</span>
+            </div>
+            <div class="card-modal__text">
+                <p>Lorem ipsum...</p> 
+            </div>
+            <div class="card-modal__our-btn">
+                <button class="card-modal__btn card-modal__btn_first btn-close">Close</button>
+                <button class="card-modal__btn card-modal__btn_last btn-save">Ok</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+    <script>
+        let menu = new Menu({
+           elem: document.getElementById('alert-warning')
+       });
+   </script>
+</body>
+</html>
