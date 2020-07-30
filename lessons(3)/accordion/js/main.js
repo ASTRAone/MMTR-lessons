@@ -1,9 +1,9 @@
 function Menu(options) {
     let elem = options.elem;
-  
+
     elem.onclick = function(event) {
         if (event.target.closest('.container__item')) {
-            let items = document.querySelectorAll(".container__item");
+            let items = elem.querySelectorAll(".container__item");
 
             items.forEach((item) => {
                 item.addEventListener("click", (e) => {    
@@ -19,3 +19,4 @@ function Menu(options) {
         }
     };
 };
+
