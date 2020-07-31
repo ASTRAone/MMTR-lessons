@@ -32,8 +32,12 @@
     background: #dedcd9;
 }
 
+.table__caption::before {
+    content: "<";
+}
+
 .table__caption::after {
-    content: "<Lorem ipsum dolor>";
+    content: ">";
 }
 
 th {
@@ -42,20 +46,8 @@ th {
     border-bottom: 1px solid;
 }
 
-th.table__th_first::after {
-    content: "<#>";
-}
-
-th.table__th-two::after {
-    content: "<Lorem>";
-}
-
 th.table__th-item::after {
-    content: "<Lorem>";
-}
-
-th.table__th-item_last::after {
-    content: "<Link>";
+    content: "<" attr(title) ">";
 }
 
 .table__th-two {
@@ -136,6 +128,10 @@ a::after {
     padding-top: 5px;
 }
 
+.table__item-td_last::before {
+    content: "(" attr(title) ")";
+}
+
 .table__td-same {
     height: 40px;
     vertical-align: bottom;
@@ -156,6 +152,10 @@ a::after {
     vertical-align: inherit;
 }
 
+.table__td-same_last::before {
+    content: "(" attr(title) ")";
+}
+
 .table__paint:nth-child(odd) {
     background: #adecc9;;
 }
@@ -167,8 +167,12 @@ a::after {
     background: #dedcd9;
 }
 
+.table__outcome::before {
+    content: "<";
+}
+
 .table__outcome::after {
-    content: "<Всего: 7>";
+    content: ">";
 }
 
 .table__copyright {
@@ -176,6 +180,10 @@ a::after {
     padding-left: 15px;
     height: 50px;
     background: #dedcd9;
+}
+
+.table__copyright_span::after {
+    content: " (" attr(title) ") ";
 }
 
 .table__span::before {
