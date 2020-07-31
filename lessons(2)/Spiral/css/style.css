@@ -30,13 +30,13 @@
     border-top: 0;
     background: #696196;
     width: 129px;
-    height: 800px;
+    height: 600px;
     border-bottom: 0;
 }
 
 .outer-right {
     width: 130px;
-    height: 800px;
+    height: 600px;
     background: #6fa2a2;
     border-top: 0;
 }
@@ -76,7 +76,7 @@
 
 .inside-left {
     width: 129px;
-    height: 500px;
+    height: 300px;
     background: #dc49f7;    
     border-left: 0;
     border-top: 0;
@@ -85,7 +85,7 @@
 
 .inside-right {
     width: 129px;
-    height: 600px;
+    height: 500px;
     border-bottom: 0;
     border-right: 0;
     border-top: 0;
@@ -94,9 +94,9 @@
 
 .inside-bottom {
     width: 76.8%;
-    height: 160px;
+    height: 100px;
     position: absolute;
-    bottom: 0;
+    bottom: 100px;
     border-left: 0;
     border-right: 0;
     border-bottom: 0;
@@ -117,7 +117,7 @@
 
 .intravenously-top {
     width: 100%;
-    height: 160px;
+    height: 100px;
     background: #ff7c8e;
     border: 0;
 }
@@ -140,7 +140,7 @@
 
 .intravenously-right {
     width: 100px;   
-    height: 280px;
+    height: 200px;
     border-radius: 0;
     border-right: 0;
     border-bottom: 0;
@@ -149,7 +149,7 @@
 
 .intravenously-bottom {
     position: absolute;
-    height: 180px;
+    height: 100px;
     background: #b15f46;
     bottom: 0;
     width: 66.5%;
