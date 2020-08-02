@@ -58,19 +58,3 @@ let parseMassObj = (massObj) => {
 console.log(parseMassObj(massObj))
 
 
-
-
-
-let strFind = (str1, str2) => {
-    let count = 0;
-
-    for (let i = 0; i < str2.length; i++) {
-        if (str1.indexOf(str2[i]) !== -1) {
-            count++;
-        }
-    }
-
-    return count;
-}
-
-console.log(strFind("qwerty", "qwertyui"))
