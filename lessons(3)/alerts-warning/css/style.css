@@ -34,7 +34,7 @@
     width: 240px;
     border: 1px solid;
     box-sizing: border-box;
-    display: none;
+    /* display: none; */
 }
 
 .card-modal__close {
@@ -48,6 +48,10 @@
     margin-right: 15px;
     cursor: pointer;
     line-height: 2;
+}
+
+.card-modal__span::after {
+    content: "\2716"
 }
 
 .card-modal__text {

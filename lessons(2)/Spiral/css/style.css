@@ -42,7 +42,7 @@
 }
 
 .outer-bottom {
-    width: 678px;
+    width: 679px;
     height: 100px;
     position: absolute;
     bottom: 0;
@@ -93,7 +93,7 @@
 }
 
 .inside-bottom {
-    width: 76.8%;
+    width: 76.9%;
     height: 100px;
     position: absolute;
     bottom: 100px;
@@ -152,7 +152,7 @@
     height: 100px;
     background: #b15f46;
     bottom: 0;
-    width: 66.5%;
+    width: 66.7%;
     border-right: 0;
     border-left: 0;
     border-bottom: 0;

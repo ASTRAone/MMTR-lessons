@@ -20,7 +20,7 @@ function Menu(options) {
             let containerModal = createElementItem("div", "container-modal")
             let ourModalTitle = createElementItem("div", "our-modal__title");
             let titleModal = createElementItem("h3", "title__modal", "Modal title");
-            let spanModal = createElementItem("span", "span__modal btn-close", `&#10006;`);
+            let spanModal = createElementItem("span", "span__modal btn-close");
 
             ourModalTitle.appendChild(titleModal);
             ourModalTitle.appendChild(spanModal);

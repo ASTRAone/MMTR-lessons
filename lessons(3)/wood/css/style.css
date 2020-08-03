@@ -15,6 +15,7 @@ ul, li {
 .menu__span {
     margin-bottom: 20px;
     display: block;
+    cursor: pointer;
 }
 
 .sub-menu-b {
@@ -34,6 +35,10 @@ ul, li {
 .sub-menu__item {
     position: relative;
     margin-bottom: 20px;
+}
+
+.sub-menu__item_cl {
+    cursor: pointer;
 }
 
 .sub-menu__item_a {
