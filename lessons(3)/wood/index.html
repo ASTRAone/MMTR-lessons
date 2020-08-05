@@ -8,25 +8,39 @@
 </head>
 <body>  
     <div class="container" id="menu-items">
-        <ul class="menu">
-            <li class="menu__item"><span class="menu__span">Главная</span>
-                <ul class="sub-menu-b">
-                    <li class="sub-menu__item sub-menu__item_cl">Второй уровень
-                        <ul class="sub-menu-bottom">
-                            <li class="sub-menu__item_a">Третий уровень</li>
-                            <li class="sub-menu__item_a">Третий уровень</li>
+        <ul class="top-menu">
+            <li class="top-menu__title"><span>Главная</span>
+                <span class="span sub-menu__span">&#10010;</span>
+                <ul class="sub-menu">
+                    <li class="sub-menu__item">Меню второго уровня</li>
+                    <li class="sub-menu__item sub-menu__item_b">Меню второго уровня
+                        <span class="span sub-menu__span_two">&#10010;</span>
+                        <ul class="sub-menu-two">
+                            <li class="sub-menu-two__item">Меню третьего уровня</li>
+                            <li class="sub-menu-two__item sub-menu-two__item_b">Меню третьего уровня
+                                <span class="span sub-menu__span_three">&#10010;</span>
+                                <ul class="sub-menu-three">
+                                    <li class="sub-menu-two__item">Меню четвертого уровня</li>
+                                    <li class="sub-menu-two__item">Меню четвертого уровня</li>
+                                </ul>
+                            </li>
                         </ul>
-                        <li class="sub-menu__item">Второй уровень</li>
-                    </li>   
+                    </li>
+                    <li class="sub-menu__item">Меню второго уровня
+                        <span class="span sub-menu__span_two-b">&#10010;</span>
+                        <ul class="sub-menu-two_b">
+                            <li class="sub-menu-two_b-item">Меню второго уровня</li>
+                        </ul>
+                    </li>
                 </ul>
             </li>
         </ul>
     </div>
     <script src="./js/main.js"></script>
     <script>
-        let menu = new Menu({
-           elem: document.getElementById('menu-items')
-       });
+    //     let menu = new Menu({
+    //        elem: document.getElementById('menu-items')
+    //    });
    </script>
 </body>
 </html>
