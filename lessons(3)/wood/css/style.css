@@ -3,12 +3,20 @@
     padding: 0;
 } */
 
+li {
+    list-style-type: none; /* Убираем маркеры */
+   }
+
 .top-menu {
 
 }
 
 .top-menu__title {
 
+}
+
+.span__b {
+    display: flex;
 }
 
 .span {
