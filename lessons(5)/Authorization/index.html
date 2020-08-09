@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authorization Form</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <form class="form" method="get" action="#" onsubmit="false">
+        <h3 class="form__title">
+            Member Login
+        </h3>
+        <div class="form__our">
+            <input class="form__input form__input_mail" type="email" placeholder="Email">
+            <input class="form__input form__input_pass" type="password" placeholder="Password">
+        </div>
+        <div class="form__our-sing"> 
+            <button class="form__btn">Sing in</button>
+            <p class="form__mistake">Данные неккоректны</p>
+    
+        </div>
+        <div class="form__help">
+            <span class="form__span form__span_l">   
+                <input type="checkbox" class="form__input-ch" id="input_l">
+                <label class="form__label" for="input_l">Remember me</label>
+            </span>
+            <a class="form__a" href="#">Forgot password?</a>
+        </div>
+    </form> 
+    <script src="./js/main.js"></script>
+</body>
+</html>
