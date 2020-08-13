@@ -39,17 +39,84 @@ btnForm.addEventListener("click", (e) => {
     let pass = document.querySelector(".form__input_pass").value;
     let confPass = document.querySelector(".form__input_conf-pass").value;
 
-    console.log(validateFullName(fullName))
+    if (!validateFullName(fullName)) {
+        let inputFullName = document.querySelector(".form__input_full-name");
+        inputFullName.style.borderBottom = "1px solid red";
 
-    if (validateEmail(email) && validatePass(pass, confPass) && validateFullName(fullName) && validateUserName(userName)) {
-        formSubmit.submit();
-        formSubmit.reset();
+        let mistake = document.querySelector(".form__mistake");
+        mistake.style.opacity = 1;
+
+        return;
+    } else {
+        let inputFullName = document.querySelector(".form__input_full-name");
+        inputFullName.style.borderBottom = "1px solid white";
 
         let mistake = document.querySelector(".form__mistake");
         mistake.style.opacity = 0;
-    } 
-    else {
+    }
+
+    if (!validateUserName(userName)) {
+        let inputUserName = document.querySelector(".form__input_user-name");
+        inputUserName.style.borderBottom = "1px solid red";
+
         let mistake = document.querySelector(".form__mistake");
         mistake.style.opacity = 1;
+    } else {
+        let inputUserName = document.querySelector(".form__input_user-name");
+        inputUserName.style.borderBottom = "1px solid white";
+
+        let mistake = document.querySelector(".form__mistake");
+        mistake.style.opacity = 0;
     }
+
+    if (!validateEmail(email)) {
+      let inputMail = document.querySelector(".form__input_mail");
+      inputMail.style.borderBottom = "1px solid red";
+
+      let mistake = document.querySelector(".form__mistake");
+      mistake.style.opacity = 1;
+
+      return;
+    } else {
+        let inputMail = document.querySelector(".form__input_mail");
+        inputMail.style.borderBottom = "1px solid white";
+  
+        let mistake = document.querySelector(".form__mistake");
+        mistake.style.opacity = 0;
+    }
+
+    if (!validatePass(pass, confPass)) {
+        let inputPass = document.querySelector(".form__input_pass");
+        inputPass.style.borderBottom = "1px solid red";
+
+        let inputPassConfirm = document.querySelector(".form__input_conf-pass");
+        inputPassConfirm.style.borderBottom = "1px solid red";
+
+        let mistake = document.querySelector(".form__mistake");
+        mistake.style.opacity = 1;
+
+        return;
+    } else {
+        let mistake = document.querySelector(".form__mistake");
+        mistake.style.opacity = 0;
+
+        let inputPass = document.querySelector(".form__input_pass");
+        inputPass.style.borderBottom = "1px solid white";
+
+        let inputPassConfirm = document.querySelector(".form__input_conf-pass");
+        inputPassConfirm.style.borderBottom = "1px solid white";
+    }
+
+
+
+    let mistake = document.querySelector(".form__mistake");
+    mistake.style.opacity = 0;
+
+    let inputsForm = document.querySelectorAll(".form__input");
+    inputsForm.forEach((item) => {
+        item.style.borderBottom = "1px solid white";
+    });
+
+    formSubmit.submit();
+    formSubmit.reset();
 });
