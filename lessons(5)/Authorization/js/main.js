@@ -23,15 +23,47 @@ btnForm.addEventListener("click", (e) => {
     let pass = document.querySelector(".form__input_pass").value;
     let checkbox = document.querySelector(".form__input-ch").checked === true ? true : false;
 
-    if (validateEmail(mail) && validatePass(pass)) {
-        formSubmit.submit();
-        formSubmit.reset();
+
+    if (!validateEmail(mail)) {
+        let inputMail = document.querySelector(".form__input_mail");
+        inputMail.style.borderBottom = "1px solid red";
 
         let mistake = document.querySelector(".form__mistake");
+        mistake.style.opacity = 1;
+
+        return;
+    } else {
+        let mistake = document.querySelector(".form__mistake");
         mistake.style.opacity = 0;
-    } 
-    else {
+
+        let inputMail = document.querySelector(".form__input_mail");
+        inputMail.style.borderBottom = "1px solid white";
+    }
+
+    if (!validatePass(pass)) {
+        let inputPass = document.querySelector(".form__input_pass");
+        inputPass.style.borderBottom = "1px solid red";
+
         let mistake = document.querySelector(".form__mistake");
         mistake.style.opacity = 1;
+
+        return;
+    } else {
+        let mistake = document.querySelector(".form__mistake");
+        mistake.style.opacity = 0;
+
+        let inputPass = document.querySelector(".form__input_pass");
+        inputPass.style.borderBottom = "1px solid white";
     }
+
+    let mistake = document.querySelector(".form__mistake");
+    mistake.style.opacity = 0;
+
+    let inputsForm = document.querySelectorAll(".form__input");
+    inputsForm.forEach((item) => {
+        item.style.borderBottom = "1px solid white";
+    });
+
+    formSubmit.submit();
+    formSubmit.reset();
 });
