@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.input {
+    display: block;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 25px;
+    transition: all 0.3s;
+    border: 1px solid black;
+    height: 20px;
+    outline: none;
+    background: white;
+}
+
+.input:hover {
+    background: #ffe0e0
+}
+
+.input:focus {
+    border: 1px solid blue;
+}
+
+input[disabled]:hover {
+    background: transparent;
+}
