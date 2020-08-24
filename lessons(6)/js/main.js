@@ -18,39 +18,69 @@ creacteRectCenter = (x, y, wd, hg) => {
 
 // Заполнение сетки
 createRects = () => {
+
+    // Сделать const
+
+
     let container = document.body;
     let rect = document.querySelector(".rect");
 
-    let x = parseInt(rect.style.left);
-    let y = parseInt(rect.style.top);
-    let wd = parseInt(rect.style.width);
-    let hg = parseInt(rect.style.height);
 
-    // for (let i = 1; i < 110; i++) {
-    //     let rectGrid = document.createElement("div");
-    //     rectGrid.classList.add("rect-grid");
+    const x = parseInt(rect.style.left);
+    const y = parseInt(rect.style.top);
+    const wd = parseInt(rect.style.width);
+    const hg = parseInt(rect.style.height);
+
+
+    for (let i = 1; i < 5; i++) {
+        let rectGrid = document.createElement("div");
+        rectGrid.classList.add("rect-grid");
     
-    //     rectGrid.style.left = x + wd * i + "px";
-    //     rectGrid.style.top = y + "px";
-
-    //     if (rectGrid.style.left > 1061 + "px") {
-    //         x = 0
-    //         let newY = y + hg * i + "px";
-
-    //         rectGrid.style.left = x + wd + "px";
-    //         rectGrid.style.top = newY + "px";
-    //     }
+        rectGrid.style.left = x + wd * i + "px";
+        rectGrid.style.top = y + "px";
     
-    //     container.appendChild(rectGrid);
-    // }
+        container.appendChild(rectGrid);
+    }
 
-    let rectGrid = document.createElement("div");
-    rectGrid.classList.add("rect-grid");
+    for (let i = 1; i < 5; i++) {
+        let rectGrid = document.createElement("div");
+        rectGrid.classList.add("rect-grid");
+    
+        rectGrid.style.left = x + "px";
+        rectGrid.style.top = y + hg * i + "px";
+    
+        container.appendChild(rectGrid);
+    }
 
-    rectGrid.style.left = x + wd + "px";
-    rectGrid.style.top = y + "px";
+    for (let i = 1; i < 5; i++) {
+        let rectGrid = document.createElement("div");
+        rectGrid.classList.add("rect-grid");
+    
+        rectGrid.style.left = x + "px";
+        rectGrid.style.top = y - hg * i + "px";
+    
+        container.appendChild(rectGrid);
+    }
 
-    container.appendChild(rectGrid);
+    for (let i = 1; i < 5; i++) {
+        let rectGrid = document.createElement("div");
+        rectGrid.classList.add("rect-grid");
+    
+        rectGrid.style.left = x - wd * i + "px";
+        rectGrid.style.top = y + "px";
+    
+        container.appendChild(rectGrid);
+    }
+
+    // let rectGrid = document.createElement("div");
+    // rectGrid.classList.add("rect-grid");
+
+    // rectGrid.style.left = x + wd + "px";
+    // rectGrid.style.top = y + "px";
+
+    // container.appendChild(rectGrid);
+
+
 };
 
 creacteRectCenter(660, 300, 40, 20);
