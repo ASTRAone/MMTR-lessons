@@ -25,12 +25,10 @@ createRects = () => {
     let container = document.body;
     let rect = document.querySelector(".rect");
 
-
-    const x = parseInt(rect.style.left);
-    const y = parseInt(rect.style.top);
-    const wd = parseInt(rect.style.width);
-    const hg = parseInt(rect.style.height);
-
+    let x = parseInt(rect.style.left);
+    let y = parseInt(rect.style.top);
+    let wd = parseInt(rect.style.width);
+    let hg = parseInt(rect.style.height);
 
     for (let i = 1; i < 5; i++) {
         let rectGrid = document.createElement("div");
@@ -52,26 +50,6 @@ createRects = () => {
         container.appendChild(rectGrid);
     }
 
-    for (let i = 1; i < 5; i++) {
-        let rectGrid = document.createElement("div");
-        rectGrid.classList.add("rect-grid");
-    
-        rectGrid.style.left = x + "px";
-        rectGrid.style.top = y - hg * i + "px";
-    
-        container.appendChild(rectGrid);
-    }
-
-    for (let i = 1; i < 5; i++) {
-        let rectGrid = document.createElement("div");
-        rectGrid.classList.add("rect-grid");
-    
-        rectGrid.style.left = x - wd * i + "px";
-        rectGrid.style.top = y + "px";
-    
-        container.appendChild(rectGrid);
-    }
-
     // let rectGrid = document.createElement("div");
     // rectGrid.classList.add("rect-grid");
 
@@ -79,8 +57,7 @@ createRects = () => {
     // rectGrid.style.top = y + "px";
 
     // container.appendChild(rectGrid);
-
-
+    
 };
 
 creacteRectCenter(660, 300, 40, 20);
