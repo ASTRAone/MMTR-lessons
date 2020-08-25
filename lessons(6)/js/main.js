@@ -1,3 +1,19 @@
+let arrCoords = [];
+
+// Обновление массива координат
+updateArrCoords = (x, y, wd, hg) => {
+    let newObjCoord = new Object();
+
+    newObjCoord.left = x;
+    newObjCoord.top = y;
+    newObjCoord.width = wd;
+    newObjCoord.height = hg;
+
+    arrCoords.push(newObjCoord);
+
+    console.log(arrCoords)
+};
+
 // Создание центрального прямоугольника
 creacteRectCenter = (x, y, wd, hg) => {
     let container = document.body;
@@ -14,6 +30,9 @@ creacteRectCenter = (x, y, wd, hg) => {
     rect.style.height = hg + "px";
     
     container.appendChild(rect);
+
+    // Добавление координат в массив
+    updateArrCoords(x, y, wd, hg)
 };
 
 createLineGrid = (x, y, wd, hg, lenthLine, LENGTH_TOP, d_top, d_bottom) => {
@@ -21,7 +40,7 @@ createLineGrid = (x, y, wd, hg, lenthLine, LENGTH_TOP, d_top, d_bottom) => {
 
         let container = document.body;
         let rectGrid = document.createElement("div");
-            rectGrid.classList.add("rect-grid");
+        rectGrid.classList.add("rect-grid");
 
         let left;
         let top;
@@ -46,12 +65,15 @@ createLineGrid = (x, y, wd, hg, lenthLine, LENGTH_TOP, d_top, d_bottom) => {
 
             default: return;
         }
-            
+
         // Координаты фигуры
         rectGrid.style.left = left + "px";
         rectGrid.style.top = top + "px";
-        
+
         container.appendChild(rectGrid);
+
+        // Добавление координат в массив
+        updateArrCoords(left, top, wd, hg);
     }
 };
 
@@ -85,6 +107,9 @@ createRects = () => {
         // Вправо и вниз
         createLineGrid(x, y, wd, hg, LENGTH, LENGTH_TOP, "+", "+")
         LENGTH_TOP++;
+
+        // Добавление координат в массив
+        updateArrCoords(left, top, wd, hg);
     }
 
     LENGTH_TOP = 1
@@ -103,10 +128,13 @@ createRects = () => {
         container.appendChild(rectGrid);
         
         // Вверх и вправо
-        createLineGrid(x, y, wd, hg, LENGTH, LENGTH_TOP, "+", "-")
+        createLineGrid(x, y, wd, hg, LENGTH, LENGTH_TOP, "+", "-");
 
         // Вверх и влево
-        createLineGrid(x, y, wd, hg, LENGTH, LENGTH_TOP, "-", "-")
+        createLineGrid(x, y, wd, hg, LENGTH, LENGTH_TOP, "-", "-");
+
+        // Добавление координат в массив
+        updateArrCoords(left, top, wd, hg);
 
         LENGTH_TOP++;
     }
@@ -125,6 +153,9 @@ createRects = () => {
         rectGrid.style.top = top + "px";
     
         container.appendChild(rectGrid);
+
+        // Добавление координат в массив
+        updateArrCoords(left, top, wd, hg);
     }
 
     // Влево
@@ -141,7 +172,10 @@ createRects = () => {
         container.appendChild(rectGrid);
 
         // Влево и вниз
-        createLineGrid(x, y, wd, hg, LENGTH, LENGTH_TOP, "-", "+")
+        createLineGrid(x, y, wd, hg, LENGTH, LENGTH_TOP, "-", "+");
+
+        // Добавление координат в массив
+        updateArrCoords(left, top, wd, hg);
 
         LENGTH_TOP++;
     }
@@ -157,7 +191,7 @@ let btn = document.querySelector(".btn");
 btn.addEventListener("click", () => {
     createRects();
 
-    btn.style.display = "none"
+    btn.style.display = "none";
 });
 
 
