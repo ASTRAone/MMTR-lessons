@@ -10,8 +10,6 @@ updateArrCoords = (x, y, wd, hg) => {
     newObjCoord.height = hg;
 
     arrCoords.push(newObjCoord);
-
-    console.log(arrCoords)
 };
 
 // Создание центрального прямоугольника
@@ -192,6 +190,7 @@ btn.addEventListener("click", () => {
     createRects();
 
     btn.style.display = "none";
+    console.log(arrCoords)
 });
 
 
